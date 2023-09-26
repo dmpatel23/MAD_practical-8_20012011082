@@ -92,7 +92,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:text="Create Alarm"
-            android:textSize="18dp"
+            android:textSize="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv4" />
 
