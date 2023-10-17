@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         val month = alarmTime.get(Calendar.MONTH)
         val date = alarmTime.get(Calendar.DATE)
         alarmTime.set(year, month, date, hour, minute, 0)
-        val textAlarmTime : TextView = findViewById(R.id.tv4)
+        val textAlarmTime : TextView = findViewById(R.id.tv6)
         textAlarmTime.text = SimpleDateFormat("hh:mm:ss a").format(alarmTime.time)
         setAlarm(alarmTime.timeInMillis, AlramBroadcastReciver.ALARM_START)
     }
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun sendDialogDataToActivity(hour: Int, minute: Int){
-        val textAlarmTime : TextView = findViewById(R.id.tv6)
+        val textAlarmTime : TextView = findViewById(R.id.tv4)
         val alarmCalendar = Calendar.getInstance()
         val year: Int = alarmCalendar.get(Calendar.YEAR)
         val month: Int = alarmCalendar.get(Calendar.MONTH)
